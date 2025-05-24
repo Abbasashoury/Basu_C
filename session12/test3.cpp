@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {  
-    char a='ali&'; 
+    char a='a'; 
     // cout<<isalpha(a)<<endl;
     // cout<<isalnum(a)<<endl;
     // cout<<isdigit(a)<<endl;
