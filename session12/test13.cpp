@@ -18,10 +18,10 @@ int main()
 
     if(lower==reverse)
     {
-        cout<< "is palindroom";
+        cout<< "is Palindrome";
     }
     else{
-         cout<< "Not palindroom";
+         cout<< "Not Palindrome";
     }
    
 }
