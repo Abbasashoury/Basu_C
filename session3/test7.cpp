@@ -1,16 +1,18 @@
 #include <iostream>
 using namespace std;
-int main(){
+int main()
+{
     int n, sum = 0;
-    cout<<"Enter a Number: "<<endl;
+    cout << "Enter a Number: " << endl;
     cin >> n;
-    if (n<0)    
+    if (n < 0)
         n = -n;
-    while(n>0){
+    while (n > 0)
+    {
         int r = n % 10;
         sum += r;
-        n = n/10;
+        n = n / 10;
     }
-    cout<<sum;
+    cout << sum;
     return 0;
 }

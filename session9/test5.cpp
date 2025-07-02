@@ -2,10 +2,11 @@
 #include <cstring>
 using namespace std;
 
-int main(){
+int main()
+{
     int a = 100;
-    int &b = a;    
+    int &b = a;
     b = 200;
-    cout<<"a:"<<a<<" ,b: "<<b;
+    cout << "a:" << a << " ,b: " << b;
     return 0;
 }

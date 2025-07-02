@@ -4,9 +4,9 @@ int main(){
 
     //logical operations
     int a, b;
-    a=2;
-    b=6;
+    a=15;
+    b=5;
     cout<<((a>b)&&(a%2))<<endl;
-   
+   //0 false 1 true
     return 0;
 }
