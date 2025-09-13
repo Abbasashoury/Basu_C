@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
+// اگه 10 تا کلمه قدیمی هم باشه پیداش میکنه جایگزین مکینه
 int main() {
     string sentence, old_word, new_word;
     

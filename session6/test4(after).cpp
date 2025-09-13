@@ -17,7 +17,7 @@ int main()
         }
         else
         {
-            arr[k--] = n;
+            arr[k--] = n;// != arr[--k]
         }
     }
 

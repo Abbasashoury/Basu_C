@@ -12,7 +12,7 @@ int main()
         flag = -1;
     }
 
-    while (n > 0)
+    while (n > 0) // برعکس میکنه
     {
         int r = n % 10;
         rev = rev * 10 + r;

@@ -2,12 +2,14 @@
 #include <cctype>
 #include <string>
 using namespace std;
-//Convert to Uppercase using string
-int main() {
+// Convert to Uppercase using string
+int main()
+{
     string s = "ABcdEfG";
     string s2 = "";
 
-    for (char c : s) {
+    for (char c : s)
+    {
         s2 += toupper(c);
     }
 

@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    // Write To File
+    // Write To File*****************************
     ofstream outFile("names.txt");
     outFile << "Ali" << endl;
     outFile << "Reza" << endl;

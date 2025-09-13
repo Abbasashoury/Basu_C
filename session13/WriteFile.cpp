@@ -1,12 +1,17 @@
 #include <iostream>
-#include <fstream>  
+#include <fstream>
 using namespace std;
 
-int main() {
+int main()
+{
     ofstream file;
-    file.open("example.txt",ios::app); //ios::app (append) ios::in (default for ifstream) ios::out (default for ofstream) ios::trunc (default for ofstream)
+    file.open("example.txt", ios::app); 
+    // ios::app yani har chi benevisi, be akhar file ezafe mishe va data ghabli hazf nemishe.
+    // In model  file.open("example.txt",ios::app) file ro ham sakhte ham baz mikone mesl ofstream file("example.txt" ,ios::app);
+    // ios::app (append) ios::in (default for ifstream) ios::out (default for ofstream) ios::trunc (default for ofstream)
 
-    if (!file.is_open()) {
+    if (!file.is_open())
+    {
         cout << "Error in open file!" << endl;
         return 1;
     }
@@ -14,7 +19,7 @@ int main() {
     file << "First file in C++" << endl;
     file << "This is a text file." << endl;
 
-    file.close(); 
+    file.close();
     cout << " Information Write to file Successfully ." << endl;
     return 0;
 }

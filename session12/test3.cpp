@@ -1,55 +1,65 @@
-#include<iostream>
+#include <iostream>
 #include <cctype>
-#include<cstring>
+#include <cstring>
 using namespace std;
+
 int main()
-{  
-    char a='a'; 
-    // cout<<isalpha(a)<<endl;
-    // cout<<isalnum(a)<<endl;
-    // cout<<isdigit(a)<<endl;
-    // cout<<ispunct(a)<<endl;
-    // cout<<isupper(a)<<endl;
-    // cout<<islower(a)<<endl;
-    // cout<<char (tolower(a))<<endl;
-    // cout<<char (toupper(a))<<endl;
+{
+  char a = 'a';
 
-     char name1[10]="Alireza";
-     char name2[]="mohammad";
-     name1[0]='B';
-     //cout<<name1<<endl;
-    //<< name2<<endl;
-    //name1="ahmad" ; //Error;
-    // //name2="ahmad"  //Error;
-    // char* const name3="alireza";
-     //char * name4="mohammadreza";    
-    // cout<<name3<<endl;    
-    // //name3="reza"   //Error;
-    // name4="reza";  //change pointer is allow  
-    // cout<<name4<<endl;
-    // //name4[0]='s'; //Error   Not allowed to change content of string 
-    // //cout<<name4<<endl;
-  
-    //  cout<<strlen(name2)<<endl;
+  cout << isalpha(a) << endl;
+  cout << isalnum(a) << endl; // خرف یا عدد باشد
+  cout << isdigit(a) << endl;
+  cout << ispunct(a) << endl; // علامت نگارشی باشد
+  cout << isupper(a) << endl;
+  cout << islower(a) << endl;
+  cout << char(tolower(a)) << endl;
+  cout << char(toupper(a)) << endl;
 
-     strcpy(name2,"ahmad");
-     cout<< name2 << endl;
-     char family[100];
-     cin.getline(family,99);
+  /****************************************************************************** */
+  string name0 = "reza";
+  name0[0] = 'A';  // change content of string is allowed
+  name0 = "ahmad"; // change string is allowed
 
-     cout<< family <<endl;
-    
-     int p=strcmp(name2,family);
-       cout <<p<<endl;
-     cout<<strcat(name2,family)<<endl;
+  char name2[] = "mohammad and Ali"; // char array or C-style string
+  name2[0] = 'B';                    // change content of string is allowed // name2="ahmad" ; Error;
+  cout << name2 << endl;
 
-     char* result=strstr(family,"ali");
-     cout<<"result= "<< result <<endl;
-     cout<<"position:" << result-family<<endl;
-     string s = "Hello Ali";
-     cout<<strstr(s.c_str(), "Ali");
+  char *name4 = "mohammadreza";
+  name4 = "reza"; // change pointer is allow // name4[0]='s'; Error Not allowed to change content of string
+  cout << name4 << endl;
 
-    // cout<<endl;
-    // cout<<endl;
-    return 0;
+  // char *const name3 = "alireza"; // name3="reza" Error;
+
+  cout << strlen(name2) << endl;
+  cout << name0.length() << endl;
+
+  cout << strstr(name2, "Ali") << endl;
+  cout << name0.find("Ali") << endl;
+
+  cout << name0[0] << endl
+       << name0.at(0) << endl; // allow 2 model for string
+  cout << name2[0] << endl;    // cout << name2.at(0) ; error not allowed for char array
+  //*************************************************************************************************** */
+  strcpy(name2, "ahmad");
+  cout << name2 << endl;
+  char family[100];
+
+  cin.getline(family, 99); // for char array (read a line of input into family, max 99 characters) deferent by cin.getline(family, 99) for string
+
+  cout << family << endl;
+
+  int p = strcmp(name2, family); // if name2 > family return 1, if name2 < family return -1, if name2 == family return 0
+  cout << p << endl;
+  cout << strcat(name2, family) << endl; // concatenate name2 and family
+
+  char *result = strstr(family, "ali");
+  cout << "result= " << result << endl;
+  cout << "position:" << result - family << endl;
+  string s = "Hello Ali";
+  cout << strstr(s.c_str(), "Ali"); // convert string to char array using c_str()
+
+  // cout<<endl;
+  // cout<<endl;
+  return 0;
 }

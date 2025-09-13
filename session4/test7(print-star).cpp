@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+/*
 int main()
 {
   for (int k = 1; k <= 5; k++)
@@ -13,14 +14,13 @@ int main()
 
   return 0;
 }
-
-/*
+*/
 
 int main()
 {
-    for (int i = 0; i < 9; i++)
+    for (int i = 0; i < 9; i++) // سطرها
     {
-        for (int j = 0; j < 9; j++)
+        for (int j = 0; j < 9; j++) // ستون ها
         {
             if (i == 0 || i == 8 || j == 0 || j == 8)
             {
@@ -70,7 +70,6 @@ int main()
             }
         }
         cout << "    ";
-
         for (int j = 0; j < 9; j++)
         {
             if (i <= 4 && (j == 4 - i || j == 4 + i))
@@ -90,4 +89,4 @@ int main()
         cout << endl;
     }
     return 0;
-}*/
+}

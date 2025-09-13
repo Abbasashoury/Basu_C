@@ -25,7 +25,7 @@ void read(int a[], int n)
         cin >> a[i];
     }
 }
-void find_max2(int a[], int n)
+void find_max2(int a[], int n) //************************************** */
 {
     int first = -100000, second = -100000;
     for (int i = 0; i < n; i++)
